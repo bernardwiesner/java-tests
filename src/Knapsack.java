@@ -4,12 +4,12 @@ public class Knapsack {
     public static void main(String[] args){
         int[] weights =     {0,     2,    3,    1,     5,      7,     9};
         float[] profits =   {0, 0.10f, 0.5f, 0.3f, 0.13f, 0.145f, 0.25f};
-        int itemPosition = 3;
-        int maxWeight = 3;
+        int itemPosition = weights.length - 1;
+        int maxWeight = 100;
 
         float maximumProfit = knapSack(itemPosition, maxWeight, weights, profits);
         System.out.println(maximumProfit);
-
+        System.out.println(times);
     }
 
     private static float knapSack(int itemPosition, int maxWeight, int[] weights, float[] profits){
